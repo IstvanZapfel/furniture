@@ -197,7 +197,7 @@ h6 {
   position: fixed;
   top: 0;
   right: -100%;
-  width: 40%;
+  width: 50%;
   height: 100%;
   background-color: rgba(64, 62, 62, 0.925);
   padding: 100px 30px 30px 30px;
@@ -413,7 +413,7 @@ body._touch .menu__list li._active .menu__arrow {
     position: fixed;
     top: 0;
     left: -100%;
-    width: 60%;
+    width: 50%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
     padding: 100px 30px 30px 30px;
@@ -1166,7 +1166,17 @@ button.swiper-pagination-bullet {
 
 body._lock {
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.501);
+}
+
+body._lock::after {
+  content: "";
+  background: rgba(21, 21, 21, 0.943);
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
 }
 
 .wrapper {
