@@ -1268,3 +1268,32 @@ body._lock::after {
 .swiper-pagination-bullet-active {
   background: #2160dd;
 }
+
+.furniture-types__body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
+}
+.furniture-types__item {
+  width: 100%;
+  padding: 0px 0px 90% 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.furniture-types__item span {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: 700;
+}
