@@ -23,6 +23,10 @@ a:active {
   outline: none;
 }
 
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 nav,
 footer,
 header,
@@ -258,7 +262,7 @@ body._pc .contacts-menu__body {
   visibility: hidden;
   pointer-events: none;
   transition: all 0.3s ease 0s;
-  background-color: rgba(63, 116, 177, 0.925);
+  background-color: rgba(65, 67, 68, 0.976);
 }
 
 body._pc .contacts-menu__btn:hover .contacts-menu__body {
@@ -284,13 +288,20 @@ body._pc .contacts-menu__btn:hover .contacts-menu__icon {
   color: #fff;
   font-size: 18px;
 }
+body._touch .menu__list > li a:active {
+  color: orange;
+}
+body._touch .menu__sub-list > li a:active {
+  color: orange;
+}
 .menu__sub-list {
   position: absolute;
   top: 100%;
   right: 0px;
-  background-color: #060606;
+  background-color: rgba(65, 67, 68, 0.976);
   padding: 15px;
   min-width: 200px;
+  border-radius: 3px;
 }
 .menu__sub-link {
   color: #fff;
@@ -413,7 +424,7 @@ body._touch .menu__list li._active .menu__arrow {
     position: fixed;
     top: 0;
     left: -100%;
-    width: 50%;
+    width: 57%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
     padding: 100px 30px 30px 30px;
@@ -1296,4 +1307,37 @@ body._lock::after {
   font-size: 32px;
   color: #ffffff;
   font-weight: 700;
+}
+.btn-up {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3682a8;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 54px;
+  height: 54px;
+  z-index: 6;
+}
+
+.btn-up::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.btn-up_hide {
+  display: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-up:hover {
+    background-color: #095d86;
+  }
 }
