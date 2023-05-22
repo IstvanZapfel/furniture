@@ -174,13 +174,14 @@ h6 {
   left: 0;
   width: 100%;
   z-index: 2;
-  background-color: #363534;
 }
 .header__container {
+  background-color: #363534;
   display: flex;
   align-items: center;
   justify-content: space-between;
   min-height: 70px;
+  padding: 0px 15px 0px 15px;
 }
 .header__logo {
   position: relative;
@@ -256,7 +257,7 @@ body._pc .contacts-menu__body {
   top: 80%;
   min-height: 450px;
   width: 40%;
-  right: 0px;
+  right: 10%;
   padding: 15px;
   transform: translate(0px, 10%);
   opacity: 0;
@@ -381,6 +382,9 @@ body._touch .menu__list li._active .menu__arrow {
   body._touch .menu__list li._active .menu__arrow {
     transform: rotate(315deg);
   }
+  .contacts-menu__body {
+    max-width: 350px;
+  }
   .menu__list {
     display: flex;
     align-items: center;
@@ -479,14 +483,14 @@ body._touch .menu__list li._active .menu__arrow {
   .menu__body._active {
     left: 0;
   }
-  .menu__body:before {
+  .menu__body._active:before {
     content: "";
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     height: 70px;
-    background-color: #363534;
+    background-color: rgba(38, 37, 37, 0.3215686275);
     z-index: 2;
   }
   .menu__list > li {
@@ -513,6 +517,43 @@ body._touch .menu__list li._active .menu__arrow {
   .menu__sub-link {
     font-size: 20px;
     color: #060606;
+  }
+}
+@media (max-width: 490px) {
+  .menu__link {
+    font-size: 20px;
+  }
+  .contacts-menu__body {
+    padding: 100px 15px 15px 15px;
+  }
+  .contacts-menu__link {
+    font-size: 16px;
+  }
+  .contacts-menu__bottom {
+    font-size: 16px;
+  }
+}
+@media (max-width: 390px) {
+  .menu__sub-list {
+    min-width: 150px;
+  }
+  .menu__link {
+    font-size: 18px;
+  }
+  .menu__sub-link {
+    font-size: 16px;
+  }
+  .contacts-menu__body {
+    padding: 100px 10px 10px 10px;
+  }
+  .contacts-menu__link {
+    font-size: 14px;
+  }
+  .contacts-menu__bottom {
+    font-size: 14px;
+  }
+  .contacts-menu__title {
+    font-size: 16px;
   }
 }
 /**
@@ -1276,6 +1317,7 @@ button.swiper-pagination-bullet {
   font-size: 48px;
   color: #ffffff;
   background-color: rgba(7, 7, 7, 0.5882352941);
+  border-radius: 3px;
   transition: 0.6s ease;
   /* text-decoration: none; */
   z-index: 12;
@@ -1335,12 +1377,12 @@ button.swiper-pagination-bullet {
 
 .next {
   right: 0px;
-  border-radius: 0 3px 3px 0;
+  border-radius: 3px;
 }
 
 .prev {
   left: 0px;
-  border-radius: 3px 0 0 3px;
+  border-radius: 3px;
 }
 
 .next:hover {
@@ -1355,10 +1397,8 @@ button.swiper-pagination-bullet {
   cursor: pointer;
 }
 
-.footer {
-  background-color: #3b3a3a;
-}
 .footer__container {
+  background-color: #3b3a3a;
   display: flex;
   justify-content: center;
 }
@@ -1394,21 +1434,27 @@ body._lock::after {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  background-color: #262525;
 }
 
 .container {
   max-width: 1170px;
   margin: 0 auto;
-  padding: 0px 15px;
+  padding: 0px 10px;
 }
 
+@media (max-width: 767px) {
+  .container {
+    padding: 0px 0px;
+  }
+}
 .main-page {
   flex: 1 1 auto;
   padding: 70px 0px 30px 0px;
 }
 
 .projects {
-  padding: 10px 0 10px 0px;
+  padding: 5px;
   background-color: #c6c2c2;
 }
 .projects__body {
@@ -1416,13 +1462,20 @@ body._lock::after {
   justify-content: space-between;
   align-items: center;
 }
+.projects__icon {
+  width: 70%;
+}
 .projects__title {
-  font-size: 1.125rem;
+  font-size: 0.87rem;
   color: #212020;
   text-transform: uppercase;
   font-weight: 700;
   white-space: nowrap;
 }
+.projects__image {
+  width: 80%;
+}
+
 /* ------Swiper-------- */
 .swiper {
   position: relative;
@@ -1525,12 +1578,12 @@ body._lock::after {
   align-items: center;
   justify-content: center;
   background-color: #3682a8;
-  right: 20px;
-  bottom: 20px;
+  right: 10px;
+  bottom: 55px;
   border-radius: 50%;
   cursor: pointer;
-  width: 54px;
-  height: 54px;
+  width: 50px;
+  height: 50px;
   z-index: 6;
 }
 
@@ -1617,11 +1670,20 @@ body._lock::after {
   padding: 30px;
 }
 .tab__image img {
-  max-width: 400px;
+  max-width: 300px;
   width: 100%;
   border-radius: 5px;
 }
 
+@media (min-width: 1040px) {
+  .tab__block--active {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .tab__items {
+    padding: 20px;
+  }
+}
 .furniture-item__main {
   margin: 0px auto;
 }
