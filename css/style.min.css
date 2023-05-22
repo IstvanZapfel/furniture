@@ -186,6 +186,7 @@ h6 {
   position: relative;
   width: 80px;
   z-index: 3;
+  margin-right: 10px;
 }
 
 .contacts-menu__icon {
@@ -280,13 +281,18 @@ body._pc .contacts-menu__btn:hover .contacts-menu__icon {
 .menu__icon {
   display: none;
 }
-.menu__list > li {
-  position: relative;
-  margin: 0px 0px 0px 20px;
+.menu__sub-list {
+  transform: translate(0px, 10%);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.3s ease 0s;
 }
 .menu__link {
-  color: #fff;
-  font-size: 18px;
+  color: #ffffff;
+}
+.menu__link:hover {
+  color: orange;
 }
 body._touch .menu__list > li a:active {
   color: orange;
@@ -297,11 +303,14 @@ body._touch .menu__sub-list > li a:active {
 .menu__sub-list {
   position: absolute;
   top: 100%;
+  left: 0px;
   right: 0px;
+  margin: auto;
   background-color: rgba(65, 67, 68, 0.976);
   padding: 15px;
   min-width: 200px;
   border-radius: 3px;
+  z-index: 2;
 }
 .menu__sub-link {
   color: #fff;
@@ -315,9 +324,6 @@ body._touch .menu__sub-list > li a:active {
 .menu__sub-list > li:last-child {
   margin: 0;
 }
-.menu__arrow {
-  display: none;
-}
 
 body._pc .menu__list > li:hover .menu__sub-list {
   opacity: 1;
@@ -329,6 +335,7 @@ body._pc .menu__list > li:hover .menu__sub-list {
 body._touch .menu__list > li {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 body._touch .menu__link {
   flex: 1 1 auto;
@@ -355,22 +362,60 @@ body._touch .menu__list li._active .menu__arrow {
 }
 
 @media (min-width: 767px) {
+  body._touch .menu__arrow {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 20px;
+    bottom: -20px;
+    margin: auto;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(135deg);
+  }
+  body._touch .menu__sub-list {
+    top: 40px;
+  }
+  body._touch .menu__list li._active .menu__arrow {
+    transform: rotate(315deg);
+  }
   .menu__list {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   .menu__list > li {
-    padding: 10px 0;
+    position: relative;
+    padding: 0px 10px;
+    text-align: center;
   }
-  .menu__sub-list {
-    transform: translate(0px, 10%);
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: all 0.3s ease 0s;
+  .menu__list > li:last-child:after {
+    display: none;
   }
-  .menu__link:hover {
-    color: orange;
+  .menu__list li:after {
+    content: "";
+    width: 2px;
+    height: 2px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin: 0px -1px 0px 0px;
+  }
+  .menu__link {
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+  .menu__link:last-child {
+    margin-right: 0px;
+  }
+}
+@media (min-width: 900px) {
+  .menu__link {
+    font-size: 12px;
   }
 }
 @media (max-width: 767px) {
@@ -1190,12 +1235,12 @@ button.swiper-pagination-bullet {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px 20px;
+  padding: 5px 5px;
 }
 .popup__content {
   background-color: rgba(0, 0, 0, 0.8);
   color: #000000;
-  max-width: 700px;
+  max-width: 800px;
   width: 100%;
   /* height: 800px; */
   /* padding: 30px; */
@@ -1210,7 +1255,6 @@ button.swiper-pagination-bullet {
   width: 100%;
   padding: 0px 0px 100% 0px;
   position: relative;
-  border-radius: 5px;
 }
 .popup__image img {
   top: 0;
@@ -1229,7 +1273,7 @@ button.swiper-pagination-bullet {
   right: 0;
   top: 0;
   padding: 10px;
-  font-size: 50px;
+  font-size: 48px;
   color: #ffffff;
   background-color: rgba(7, 7, 7, 0.5882352941);
   transition: 0.6s ease;
@@ -1573,8 +1617,9 @@ body._lock::after {
   padding: 30px;
 }
 .tab__image img {
-  max-width: 700px;
+  max-width: 400px;
   width: 100%;
+  border-radius: 5px;
 }
 
 .furniture-item__main {
@@ -1586,6 +1631,9 @@ body._lock::after {
   align-items: center;
   justify-content: center;
   background-color: #363534;
+}
+.furniture-item__items-big {
+  padding: 30px;
 }
 .furniture-item__row {
   display: flex;
@@ -1601,11 +1649,16 @@ body._lock::after {
   flex-grow: 0;
   flex-shrink: 0;
 }
-.furniture-item__image-big img {
-  max-width: 600px;
+.furniture-item__image-big {
+  display: block;
   width: 100%;
-  padding: 30px;
+}
+.furniture-item__image-big img {
+  max-width: 400px;
+  border-radius: 5px;
+  width: 100%;
 }
 .furniture-item__image img {
   width: 100%;
+  border-radius: 5px;
 }
