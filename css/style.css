@@ -406,7 +406,7 @@ body._touch .menu__list li._active .menu__arrow {
     margin: 0px -1px 0px 0px;
   }
   .menu__link {
-    font-size: 10px;
+    font-size: 12px;
     text-transform: uppercase;
   }
   .menu__link:last-child {
@@ -415,7 +415,7 @@ body._touch .menu__list li._active .menu__arrow {
 }
 @media (min-width: 900px) {
   .menu__link {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media (max-width: 767px) {
