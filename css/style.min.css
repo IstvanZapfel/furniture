@@ -194,6 +194,7 @@ h6 {
   position: relative;
   z-index: 5;
   cursor: pointer;
+  margin-right: 5px;
 }
 .contacts-menu__icon._active {
   background-color: #e6a748;
@@ -234,6 +235,7 @@ h6 {
   padding-right: 15px;
 }
 .contacts-menu__btn {
+  position: relative;
   display: flex;
   width: 10%;
   justify-content: flex-end;
@@ -249,15 +251,15 @@ h6 {
   top: 0;
   left: 0;
   height: 70px;
-  background-color: #363534;
+  background-color: rgba(54, 53, 52, 0.2784313725);
 }
 
 body._pc .contacts-menu__body {
   position: absolute;
-  top: 80%;
+  top: 100%;
   min-height: 450px;
-  width: 40%;
-  right: 10%;
+  min-width: 250px;
+  right: -16px;
   padding: 15px;
   transform: translate(0px, 10%);
   opacity: 0;
@@ -265,6 +267,7 @@ body._pc .contacts-menu__body {
   pointer-events: none;
   transition: all 0.3s ease 0s;
   background-color: rgba(65, 67, 68, 0.976);
+  z-index: 4;
 }
 
 body._pc .contacts-menu__btn:hover .contacts-menu__body {
