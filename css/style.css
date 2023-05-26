@@ -8,8 +8,6 @@
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -642,7 +640,6 @@ body._touch .menu__list li._active .menu__arrow {
 
 .swiper-backface-hidden .swiper-slide {
   transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -726,7 +723,8 @@ body._touch .menu__list li._active .menu__arrow {
 }
 
 .swiper-centered.swiper-horizontal > .swiper-wrapper > .swiper-slide:first-child {
-  margin-inline-start: var(--swiper-centered-offset-before);
+  -webkit-margin-start: var(--swiper-centered-offset-before);
+          margin-inline-start: var(--swiper-centered-offset-before);
 }
 
 .swiper-centered.swiper-horizontal > .swiper-wrapper::before {
@@ -736,7 +734,8 @@ body._touch .menu__list li._active .menu__arrow {
 }
 
 .swiper-centered.swiper-vertical > .swiper-wrapper > .swiper-slide:first-child {
-  margin-block-start: var(--swiper-centered-offset-before);
+  -webkit-margin-before: var(--swiper-centered-offset-before);
+          margin-block-start: var(--swiper-centered-offset-before);
 }
 
 .swiper-centered.swiper-vertical > .swiper-wrapper::before {
@@ -941,7 +940,8 @@ button.swiper-pagination-bullet {
   padding: 0;
   box-shadow: none;
   -webkit-appearance: none;
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
 }
 
 .swiper-pagination-clickable .swiper-pagination-bullet {
@@ -1101,7 +1101,8 @@ button.swiper-pagination-bullet {
 .swiper-zoom-container > canvas, .swiper-zoom-container > img, .swiper-zoom-container > svg {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .swiper-slide-zoomed {
@@ -1155,7 +1156,6 @@ button.swiper-pagination-bullet {
 
 .swiper-cube .swiper-slide {
   pointer-events: none;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   z-index: 1;
   visibility: hidden;
@@ -1183,7 +1183,6 @@ button.swiper-pagination-bullet {
 
 .swiper-cube .swiper-slide-shadow-bottom, .swiper-cube .swiper-slide-shadow-left, .swiper-cube .swiper-slide-shadow-right, .swiper-cube .swiper-slide-shadow-top {
   z-index: 0;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -1214,7 +1213,6 @@ button.swiper-pagination-bullet {
 
 .swiper-flip .swiper-slide {
   pointer-events: none;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   z-index: 1;
 }
@@ -1229,12 +1227,10 @@ button.swiper-pagination-bullet {
 
 .swiper-flip .swiper-slide-shadow-bottom, .swiper-flip .swiper-slide-shadow-left, .swiper-flip .swiper-slide-shadow-right, .swiper-flip .swiper-slide-shadow-top {
   z-index: 0;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
 .swiper-creative .swiper-slide {
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   overflow: hidden;
   transition-property: transform, opacity, height;
@@ -1246,7 +1242,6 @@ button.swiper-pagination-bullet {
 
 .swiper-cards .swiper-slide {
   transform-origin: center bottom;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   overflow: hidden;
 }
@@ -1306,7 +1301,8 @@ button.swiper-pagination-bullet {
   width: 100%;
   height: 100%;
   position: absolute;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .popup__demo {
   display: flex;
@@ -1356,7 +1352,8 @@ button.swiper-pagination-bullet {
   width: 100%;
   height: 100%;
   position: absolute;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   padding: 3px;
   opacity: 0.6;
   border-radius: 5px;
@@ -1495,12 +1492,12 @@ body.lock {
   font-weight: 700;
 }
 .breadcrumbs__list li + li {
-  padding-left: 7px;
+  padding-left: 14px;
 }
 .breadcrumbs__list li + li:before {
   content: "/";
   position: absolute;
-  left: 2px;
+  left: 5px;
   color: #212020;
 }
 .breadcrumbs__list li:last-child a, .breadcrumbs__list li:last-child span {
@@ -1541,7 +1538,8 @@ body.lock {
 }
 .swiper-slide img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .swiper-pagination-bullet {
   width: 30px;
