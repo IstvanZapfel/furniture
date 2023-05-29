@@ -1492,18 +1492,22 @@ body.lock {
   text-transform: uppercase;
   font-size: 11px;
   font-weight: 700;
+  padding-right: 12px;
 }
-.breadcrumbs__list li + li {
-  padding-left: 14px;
-}
-.breadcrumbs__list li + li:before {
+.breadcrumbs__list li::after {
   content: "/";
   position: absolute;
-  left: 7px;
   color: #212020;
+  margin-left: 5px;
+}
+.breadcrumbs__list li:last-child {
+  padding-right: 0;
 }
 .breadcrumbs__list li:last-child a, .breadcrumbs__list li:last-child span {
   color: #212020;
+}
+.breadcrumbs__list li:last-child::after {
+  display: none;
 }
 .breadcrumbs__list li a {
   color: #818484;
