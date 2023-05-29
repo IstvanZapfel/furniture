@@ -1497,8 +1497,8 @@ body.lock {
 .breadcrumbs__list li::after {
   content: "/";
   position: absolute;
+  right: 4px;
   color: #212020;
-  margin-left: 5px;
 }
 .breadcrumbs__list li:last-child {
   padding-right: 0;
