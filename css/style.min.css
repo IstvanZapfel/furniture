@@ -394,6 +394,8 @@ body._touch .menu__list li._active .menu__arrow {
     justify-content: center;
   }
   .menu__list > li {
+    flex-shrink: 1;
+    flex-basis: auto;
     position: relative;
     padding: 0px 10px;
     text-align: center;
@@ -413,16 +415,11 @@ body._touch .menu__list li._active .menu__arrow {
     margin: 0px -1px 0px 0px;
   }
   .menu__link {
-    font-size: 12px;
+    font-size: 11px;
     text-transform: uppercase;
   }
   .menu__link:last-child {
     margin-right: 0px;
-  }
-}
-@media (min-width: 900px) {
-  .menu__link {
-    font-size: 14px;
   }
 }
 @media (max-width: 767px) {
@@ -1484,15 +1481,16 @@ body.lock {
 }
 .breadcrumbs__list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: start;
 }
 .breadcrumbs__list li {
+  flex-basis: auto;
+  flex-shrink: 1;
   position: relative;
   text-transform: uppercase;
   font-size: 11px;
   font-weight: 700;
-  padding: 0 7px;
+  padding: 0 10px;
 }
 .breadcrumbs__list li::after {
   content: "";
