@@ -1495,10 +1495,14 @@ body.lock {
   padding: 0 7px;
 }
 .breadcrumbs__list li::after {
-  content: "/";
+  content: "";
   position: absolute;
   right: 0;
-  color: #212020;
+  top: 0;
+  bottom: 0;
+  height: 10px;
+  border-right: 1.5px solid #444343;
+  transform: rotate(30deg);
 }
 .breadcrumbs__list li:last-child {
   padding-right: 0;
