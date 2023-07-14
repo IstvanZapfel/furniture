@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   fill="#000000"
+   width="34.241001"
+   height="22.975878"
+   viewBox="0 -9.31 2.4064145 1.6147159"
+   version="1.1"
+   id="svg26243"
+   sodipodi:docname="email-contacts-2.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs26247" />
+  <sodipodi:namedview
+     id="namedview26245"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.42375"
+     inkscape:cx="389.81563"
+     inkscape:cy="388.76207"
+     inkscape:window-width="2560"
+     inkscape:window-height="1368"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg26243" />
+  <path
+     id="email_unread"
+     data-name="email unread"
+     d="m 1.1930474,-8.3667592 h 4.141e-4 a 0.07453124,0.07453124 0 0 0 0.040751,-0.01194 l 0.00317,-0.002 0.00217,-0.0013 0.036955,-0.03061 0.8820565,-0.727853 a 0.01035156,0.01035156 0 0 0 -0.00825,-0.0042 H 0.2308664 a 0.01004101,0.01004101 0 0 0 -0.006314,0.0023 l 0.9228416,0.760667 a 0.07246092,0.07246092 0 0 0 0.04565,0.01508 z m -0.972253,-0.674887 v 1.078909 l 0.66108515,-0.534003 z m 1.279591,0.548633 0.660395,0.53069 v -1.075873 z m -0.2099642,0.17325 a 0.15730922,0.15730922 0 0 1 -0.1938848,1.73e-4 l -0.15140885,-0.124875 -0.72433315,0.584898 v 0.0018 a 0.01035156,0.01035156 0 0 0 0.0103516,0.01035 h 1.9193519 a 0.01035156,0.01035156 0 0 0 0.010352,-0.01035 v -0.0017 l -0.7237126,-0.581444 z"
+     style="fill:none;stroke:#ffffff;stroke-width:0.0345052;stroke-opacity:1" />
+</svg>

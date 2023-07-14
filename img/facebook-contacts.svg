@@ -2,9 +2,9 @@
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
 
 <svg
-   width="20"
-   height="20"
-   viewBox="0 0 0.8 0.8"
+   width="26"
+   height="26"
+   viewBox="0 0 1.04 1.04"
    version="1.1"
    id="svg11534"
    sodipodi:docname="facebook-contacts.svg"
@@ -38,7 +38,7 @@
      fill="none"
      fill-rule="evenodd"
      id="g11532"
-     transform="scale(0.025)">
+     transform="matrix(0.028375,0,0,0.028375,0.05618964,0.08428446)">
     <path
        d="M 0,0 H 32 V 32 H 0 Z"
        id="path11524" />
