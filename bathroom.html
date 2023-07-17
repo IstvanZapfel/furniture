@@ -97,54 +97,38 @@
 			<main class="main-page">
 				<div class="container">
 					<section class="projects">
-							<div class="projects__body">
-								<a href="" class="projects__link"><img src="img/projects.svg" alt="projects" class="projects__icon"></a>
-								<div class="breadcrumbs">
-									<div class="breadcrumbs__inner">
-										<ul class="breadcrumbs__list">
-											<li><a href="index.html">Головна</a></li>
-											<li><a href="kitchen.html">Кухні</a></li>
-											<li><span>Кухня дворівнева в стилі...</span></li>
-										</ul>
-									</div>
+						<div class="projects__body">
+							<a href="" class="projects__link"><img src="img/projects.svg" alt="projects" class="projects__icon"></a>
+							<div class="breadcrumbs">
+								<div class="breadcrumbs__inner">
+									<ul class="breadcrumbs__list">
+										<li><a href="index.html">Головна</a></li>
+										<li><span>Ванні кімнати</span></li>
+									</ul>
 								</div>
-								<a href="" class="projects__link-arrow"><img src="img/projects-arrow.svg" alt="projects-arrow" class="projects__image"></a>
 							</div>
+							<a href="" class="projects__link-arrow"><img src="img/projects-arrow.svg" alt="projects-arrow" class="projects__image"></a>
+						</div>
 					</section>
-					<div class="furniture-item__main">
-						<div class="furniture-item__body">
-							<div class="furniture-item__column">
-								<div class="furniture-item__items-big">
-									<span></span>
-									<a href="#image-1" class="furniture-item__image-big popup-link">
-										<img src="img/kitchen-2-level-2.jpg" alt="kitchen">
+					<div class="tab-main">
+							<nav class="tab-menu__list">
+								<a href="#" data-button="tab-1" class="tab-menu__link tab-menu__link--active"><span></span></a>
+								<!-- <a href="#" data-button="tab-2" class="tab-menu__link"><span></span></a>
+								<a href="#" data-button="tab-3" class="tab-menu__link"><span></span></a> -->
+							</nav>
+						<div class="tab__body">
+							<div id="tab-1" class="tab__block tab__block--active">
+								<div class="tab__items">
+									<a href="bathroom-1.html" class="tab__image">
+										<span>Ванна...</span>
+										<img src="img/bathroom-1.jpg" alt="bathroom">
 									</a>
 								</div>
-								<div class="furniture-item__row">
-									<div class="furniture-item__items">
-										<a href="#image-1" class="furniture-item__image popup-link">
-											<img src="img/kitchen-2-level-2.jpg" alt="kitchen">
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div id="image-1" class="popup">
-						<div class="popup__body">
-							<div class="popup__content popup__content_image">
-								<a href="#" class="popup__close close-popup">&times;</a>
-								<a href="#image-1" class="prev popup-link" >&#10094;</a>
-								<a href="#image-1" class="next popup-link" >&#10095;</a>
-								<div class="popup__image">
-									<img src="img/kitchen-2-level-2.jpg" alt="kitchen">
-								</div>
-								<div class="popup__demo">
-									 <div class="column">
-										<a href="#image-1" class="popup-link">
-											<img src="img/kitchen-2-level-2.jpg" alt="kitchen">
-										</a>
-									 </div>
+								<div class="tab__items">
+									<a href="bathroom-2.html" class="tab__image">
+										<span>Ванна...</span>
+										<img src="img/bathroom-2.jpg" alt="bathroom">
+									</a>
 								</div>
 							</div>
 						</div>
